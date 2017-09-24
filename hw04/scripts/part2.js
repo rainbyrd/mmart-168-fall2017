@@ -1,3 +1,7 @@
+// I think getData will search for the term within the twitter url listed.
+// jsonData.statuses[0]
+// jsonData.statuses[4].text
+// jsonData.statuses[1].user.name
 let language = 'English'
 let languageCode = 'en'
 let jsonData
