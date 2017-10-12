@@ -16,7 +16,7 @@ This homework will require some googling. As a software engineer, a lot of what 
 6. Verify that you are now on the new branch: `$ git branch` (check that your new branch has an asterisk next to it).
 
 ## PART II: Reading response
-Edit README.MD and write your reading response here!
+I researched this week the oakland-based 'sudomesh' volunteer organization. They are building what they call the People's Open Network "a community-owned and operated non-profit internet infrastructure in Oakland." Their website asserts that when most people think about infastructure building in cities they think of expensive powerlilnes going up, which this program completely departs from, proposing a network consisting of peoples rooftops. Also I researched the San Francisco Internet Archive and they offer free internet as well as terrabytes worth of free books.
 
 ## Part III: JavaScript Homework
 
