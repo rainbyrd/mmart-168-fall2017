@@ -8,7 +8,12 @@
 // list ("ul" tag):
 
 const addListItemToUnorderedHTMLList = (message) => {
-  document.getElementById('output').innerhtml += "<li>" + message + " </li>"
+/*  document.getElementById('output').innerhtml += "<li>" + message + " </li>"*/
+const ul = document.getElementById('output')
+const li = document.createElement("li")
+const textNode = document.createTextNode(message)
+li.appendChild(textNode)
+ul.appendChild(li)
 }
 
 //------------------------------------------------------------------
@@ -24,13 +29,14 @@ const addListItemToUnorderedHTMLList = (message) => {
 
 let start = 0
 
-for (let i = 1; i <= 100 i++) {
-  if (i % 3 === 0) {
+for (let i = 1; i <= 100; i++) {
+
+  if (i % 3 === 0 && i % 5 === 0) {
+    addListItemToUnorderedHTMLList("FizzBuzz")
+  }  else if (i % 3 === 0) {
     addListItemToUnorderedHTMLList("fizz")
   } else if (i % 5 ===0) {
     addListItemToUnorderedHTMLList("Buzz")
-  } else if (i % 3 === 0 && i % 5 === 0)
-  addListItemToUnorderedHTMLList("FizzBuzz")
   } else {
     addListItemToUnorderedHTMLList(i)}
 }
