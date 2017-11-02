@@ -12,6 +12,11 @@ const appendListElement = (text) => {
   document.querySelector('#part1').appendChild(li)
 }
 
+let counter = 0
+while (counter < 100) {
+appendListElement('Welcome, ' + name + '! Make yourself comfortable.')
+++counter
+}
 
 
 //------------------------------------------------------------------
@@ -34,27 +39,17 @@ var people = [
 const printNames = () => {
   // Message 1
   const img1 = document.createElement('img')
-  img1.src = people[0].pic
+  img1.src = people[counter].pic
   img1.classList.add('avatar')
 
   const paragraph1 = document.createElement('p')
-  const text1 = document.createTextNode('Welcome, ' + people[0].name + '! Your score is: ' + people[0].score)
+  const text1 = document.createTextNode('Welcome, ' + people[counter].name + '! Your score is: ' + people[counter].score)
   paragraph1.appendChild(text1)
 
   document.querySelector('#part2').appendChild(img1)
   document.querySelector('#part2').appendChild(paragraph1)
-
-  // Message 2
-  const img2 = document.createElement('img')
-  img2.src = people[1].pic
-  img2.classList.add('avatar')
-
-  const paragraph2 = document.createElement('p')
-  const text2 = document.createTextNode('Welcome, ' + people[1].name + '! Your score is: ' + people[1].score)
-  paragraph2.appendChild(text2)
-
-  document.querySelector('#part2').appendChild(img2)
-  document.querySelector('#part2').appendChild(paragraph2)
 }
 
-printNames()
+for (let i = 0; i < people.length; i++) {
+printNames(i)
+}
